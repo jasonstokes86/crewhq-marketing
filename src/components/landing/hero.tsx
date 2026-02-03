@@ -23,7 +23,7 @@ export function Hero() {
     <AnimatedBackground variant="hero" className="min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Two-column layout on desktop */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 xl:gap-20">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 xl:gap-20 max-w-7xl mx-auto">
           {/* Left column - Text content */}
           <div className="flex-1 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
             {/* Badge */}
