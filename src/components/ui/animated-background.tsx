@@ -1,9 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
 interface OrbProps {
-  className?: string;
   size: number;
   color: 'violet' | 'pink' | 'orange' | 'cyan';
   position: { top?: string; left?: string; right?: string; bottom?: string };
@@ -17,27 +14,18 @@ const colorMap = {
   cyan: 'rgba(6, 182, 212, 0.25)',
 };
 
+// Use CSS animation instead of Framer Motion for better performance
 function Orb({ size, color, position, delay = 0 }: OrbProps) {
   return (
-    <motion.div
-      className="absolute rounded-full pointer-events-none"
+    <div
+      className="absolute rounded-full pointer-events-none will-change-transform animate-float"
       style={{
         width: size,
         height: size,
         background: colorMap[color],
         filter: 'blur(100px)',
+        animationDelay: `${delay}s`,
         ...position,
-      }}
-      animate={{
-        x: [0, 30, -20, 20, 0],
-        y: [0, -30, 20, 10, 0],
-        scale: [1, 1.05, 0.98, 1.02, 1],
-      }}
-      transition={{
-        duration: 20,
-        repeat: Infinity,
-        ease: 'easeInOut',
-        delay,
       }}
     />
   );
