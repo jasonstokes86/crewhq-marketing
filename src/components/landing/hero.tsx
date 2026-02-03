@@ -25,7 +25,7 @@ export function Hero() {
         {/* Two-column layout on desktop */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 xl:gap-20 max-w-6xl mx-auto">
           {/* Left column - Text content */}
-          <div className="flex-1 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
+          <div className="flex-1 text-center lg:text-left lg:max-w-none">
             {/* Badge */}
             <motion.div
               variants={fadeUp}
@@ -169,7 +169,7 @@ export function Hero() {
 
           {/* Right column - Dashboard Preview */}
           <motion.div 
-            className="flex-1 mt-16 lg:mt-0 relative max-w-2xl mx-auto lg:mx-0"
+            className="flex-1 mt-16 lg:mt-0 relative max-w-md mx-auto lg:max-w-xl"
             variants={fadeUp}
             initial="hidden"
             animate="visible"
