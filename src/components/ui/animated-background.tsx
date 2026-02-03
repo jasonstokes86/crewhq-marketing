@@ -86,7 +86,7 @@ export function AnimatedBackground({
       />
       
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 w-full">
         {children}
       </div>
     </div>
