@@ -1,0 +1,11 @@
+export { Header } from './header';
+export { Hero } from './hero';
+export { LogoBar } from './logo-bar';
+export { ProblemSection } from './problem-section';
+export { SolutionSection } from './solution-section';
+export { HowItWorks } from './how-it-works';
+export { StatsSection } from './stats-section';
+export { DualAudienceSection } from './dual-audience';
+export { TestimonialsSection } from './testimonials';
+export { PricingSection } from './pricing-section';
+export { FinalCTA, Footer } from './final-cta';
