@@ -21,9 +21,9 @@ const fadeUp = {
 export function Hero() {
   return (
     <AnimatedBackground variant="hero" className="min-h-screen flex items-center pt-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-20">
         {/* Two-column layout on desktop */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 xl:gap-20 max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 xl:gap-20 max-w-6xl mx-auto w-full">
           {/* Left column - Text content */}
           <div className="flex-1 text-center lg:text-left lg:max-w-none">
             {/* Badge */}
